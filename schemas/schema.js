@@ -73,6 +73,11 @@ export default createSchema({
           type: "string",
         },
         {
+          title: "Creator",
+          name: "creator",
+          type: "string",
+        },
+        {
           title: "Description",
           name: "description",
           type: "string",
