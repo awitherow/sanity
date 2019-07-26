@@ -30,7 +30,7 @@ export default createSchema({
           title: "Tags",
           name: "tags",
           type: "array",
-          of: [{ type: "string" }],
+          of: [{ type: "reference", to: [{ type: "tag" }] }],
           options: {
             layout: "tags",
           },
@@ -85,6 +85,18 @@ export default createSchema({
         {
           title: "Link",
           name: "link",
+          type: "string",
+        },
+      ],
+    },
+    {
+      title: "Tag",
+      name: "tag",
+      type: "document",
+      fields: [
+        {
+          title: "Tag",
+          name: "tag",
           type: "string",
         },
       ],
