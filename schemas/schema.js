@@ -27,6 +27,11 @@ export default createSchema({
           type: "string",
         },
         {
+          title: "Image (1:1 Square Proportions, Use Tinyjpg first too!)",
+          name: "image",
+          type: "image",
+        },
+        {
           title: "Tags",
           name: "tags",
           type: "array",
