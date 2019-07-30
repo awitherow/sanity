@@ -41,14 +41,18 @@ export default createSchema({
           },
         },
         {
-          title: "Benefits (Descriptive Link)",
-          name: "benefits",
+          title: "Resources (Links)",
+          name: "resources",
           type: "array",
           of: [
             {
               type: "object",
               fields: [
-                { name: "address", type: "string", title: "Address" },
+                {
+                  name: "address",
+                  type: "string",
+                  title: "(Affiliate) Address",
+                },
                 { name: "text", type: "string", title: "Text" },
               ],
             },
@@ -88,7 +92,21 @@ export default createSchema({
           type: "string",
         },
         {
-          title: "Link",
+          title: "Category",
+          name: "category",
+          type: "string",
+        },
+        {
+          title: "Tags",
+          name: "tags",
+          type: "array",
+          of: [{ type: "reference", to: [{ type: "tag" }] }],
+          options: {
+            layout: "tags",
+          },
+        },
+        {
+          title: "Affiliate Link",
           name: "link",
           type: "string",
         },
