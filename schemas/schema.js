@@ -6,6 +6,7 @@ import hobby from "./activity.js";
 import activity from "./activity.js";
 import tag from "./tag.js";
 import product from "./product.js";
+import provider from "./provider.js";
 
 // blog items
 import author from "./author.js";
@@ -22,6 +23,7 @@ export default createSchema({
     tag,
     // store
     product,
+    provider,
     // blog
     author,
     blockContent,

@@ -38,6 +38,12 @@ export default {
       },
     },
     {
+      title: "Provider",
+      name: "provider",
+      type: "reference",
+      to: [{ type: "provider" }],
+    },
+    {
       title: "Affiliate Link",
       name: "link",
       type: "string",
