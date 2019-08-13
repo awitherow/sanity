@@ -1,3 +1,5 @@
+import seo from "./seo";
+
 export default {
   title: "Product",
   name: "product",
@@ -14,14 +16,26 @@ export default {
       type: "string",
     },
     {
-      title: "Creator",
+      title: "Brand",
       name: "creator",
       type: "string",
+    },
+    {
+      title: "Featured",
+      name: "featured",
+      type: "boolean",
     },
     {
       title: "Description",
       name: "description",
       type: "string",
+    },
+    {
+      title: "Tier",
+      description:
+        "Please select a number representing quality/price 1-3 only.",
+      name: "tier",
+      type: "number",
     },
     {
       title: "Category",
@@ -48,5 +62,6 @@ export default {
       name: "link",
       type: "string",
     },
+    ...seo,
   ],
 };

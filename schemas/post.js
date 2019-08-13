@@ -1,3 +1,5 @@
+import seo from "./seo";
+
 export default {
   name: "post",
   title: "Post",
@@ -52,6 +54,13 @@ export default {
       title: "Body",
       type: "blockContent",
     },
+    {
+      title: "Products",
+      name: "products",
+      type: "array",
+      of: [{ type: "reference", to: [{ type: "product" }] }],
+    },
+    ...seo,
   ],
   preview: {
     select: {

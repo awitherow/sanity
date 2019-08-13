@@ -2,7 +2,6 @@
 import createSchema from "part:@sanity/base/schema-creator";
 
 // store, content
-import hobby from "./activity.js";
 import activity from "./activity.js";
 import tag from "./tag.js";
 import product from "./product.js";
@@ -19,7 +18,7 @@ export default createSchema({
   name: "hi-vibe",
   types: schemaTypes.concat([
     // content
-    hobby,
+    activity,
     tag,
     // store
     product,

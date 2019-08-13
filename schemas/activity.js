@@ -1,3 +1,5 @@
+import seo from "./seo";
+
 export default {
   title: "Activity",
   name: "hobby",
@@ -7,6 +9,11 @@ export default {
       title: "Name",
       name: "name",
       type: "string",
+    },
+    {
+      title: "Featured",
+      name: "featured",
+      type: "boolean",
     },
     {
       title: "Description",
@@ -42,5 +49,6 @@ export default {
       type: "array",
       of: [{ type: "reference", to: [{ type: "product" }] }],
     },
+    ...seo,
   ],
 };
