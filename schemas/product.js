@@ -7,6 +7,15 @@ export default {
   fields: [
     ...seo,
     {
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      options: {
+        source: "name",
+        maxLength: 96,
+      },
+    },
+    {
       title: "Image",
       name: "image",
       type: "image",
@@ -15,15 +24,6 @@ export default {
       title: "Name",
       name: "name",
       type: "string",
-    },
-    {
-      name: "slug",
-      title: "Slug",
-      type: "slug",
-      options: {
-        source: "name",
-        maxLength: 96,
-      },
     },
     {
       title: "Brand",

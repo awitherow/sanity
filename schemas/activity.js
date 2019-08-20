@@ -7,11 +7,6 @@ export default {
   fields: [
     ...seo,
     {
-      title: "Name",
-      name: "name",
-      type: "string",
-    },
-    {
       name: "slug",
       title: "Slug",
       type: "slug",
@@ -19,6 +14,11 @@ export default {
         source: "name",
         maxLength: 96,
       },
+    },
+    {
+      title: "Name",
+      name: "name",
+      type: "string",
     },
     {
       title: "Featured",
@@ -54,6 +54,5 @@ export default {
       type: "array",
       of: [{ type: "reference", to: [{ type: "product" }] }],
     },
-    ...seo,
   ],
 };
