@@ -5,16 +5,7 @@ export default {
   title: "Post",
   type: "document",
   fields: [
-    {
-      name: "title",
-      title: "Title",
-      type: "string",
-    },
-    {
-      name: "description",
-      title: "Description",
-      type: "string",
-    },
+    ...seo,
     {
       name: "slug",
       title: "Slug",
@@ -60,7 +51,6 @@ export default {
       type: "array",
       of: [{ type: "reference", to: [{ type: "product" }] }],
     },
-    ...seo,
   ],
   preview: {
     select: {

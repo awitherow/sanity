@@ -1,20 +1,14 @@
 export default [
   {
-    title: "SEO Hook",
-    name: "seo_hook",
-    description: "attention",
+    name: "title",
+    title: "Title",
+    description: "format this in a way that is SEO friendly and optimized."
     type: "string",
   },
   {
-    title: "SEO Line",
-    name: "seo_line",
-    description: "benefit",
-    type: "string",
-  },
-  {
-    title: "SEO Sinker",
-    name: "seo_sinker",
-    description: "too late to say no now!",
+    name: "description",
+    title: "Description",
+    description: "format this in a way that is SEO friendly and optimized."
     type: "string",
   },
 ];

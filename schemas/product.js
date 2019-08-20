@@ -5,6 +5,7 @@ export default {
   name: "product",
   type: "document",
   fields: [
+    ...seo,
     {
       title: "Image",
       name: "image",
@@ -33,11 +34,6 @@ export default {
       title: "Featured",
       name: "featured",
       type: "boolean",
-    },
-    {
-      title: "Description",
-      name: "description",
-      type: "string",
     },
     {
       title: "Tier",
@@ -71,6 +67,5 @@ export default {
       name: "link",
       type: "string",
     },
-    ...seo,
   ],
 };

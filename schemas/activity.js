@@ -5,6 +5,7 @@ export default {
   name: "hobby",
   type: "document",
   fields: [
+    ...seo,
     {
       title: "Name",
       name: "name",
@@ -23,11 +24,6 @@ export default {
       title: "Featured",
       name: "featured",
       type: "boolean",
-    },
-    {
-      title: "Description",
-      name: "description",
-      type: "string",
     },
     {
       title: "Image (Remember to tinyjpg)",
