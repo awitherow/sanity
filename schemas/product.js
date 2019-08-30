@@ -7,6 +7,11 @@ export default {
   fields: [
     ...seo,
     {
+      title: "Name",
+      name: "name",
+      type: "string",
+    },
+    {
       name: "slug",
       title: "Slug",
       type: "slug",
@@ -19,11 +24,6 @@ export default {
       title: "Image",
       name: "image",
       type: "image",
-    },
-    {
-      title: "Name",
-      name: "name",
-      type: "string",
     },
     {
       title: "Brand",

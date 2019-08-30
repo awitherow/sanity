@@ -7,6 +7,11 @@ export default {
   fields: [
     ...seo,
     {
+      title: "Featured",
+      name: "featured",
+      type: "boolean",
+    },
+    {
       name: "slug",
       title: "Slug",
       type: "slug",
@@ -36,11 +41,6 @@ export default {
       of: [{ type: "reference", to: { type: "tag" } }],
     },
     {
-      name: "publishedAt",
-      title: "Published at",
-      type: "datetime",
-    },
-    {
       name: "body",
       title: "Body",
       type: "blockContent",
@@ -50,6 +50,13 @@ export default {
       name: "products",
       type: "array",
       of: [{ type: "reference", to: [{ type: "product" }] }],
+    },
+  ],
+  orderings: [
+    {
+      title: "Last Updated",
+      name: "updatedNewestFirst",
+      by: [{ field: "_updatedAt", direction: "desc" }],
     },
   ],
   preview: {
