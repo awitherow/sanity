@@ -7,16 +7,11 @@ export default {
   fields: [
     ...seo,
     {
-      title: "Name",
-      name: "name",
-      type: "string",
-    },
-    {
       name: "slug",
       title: "Slug",
       type: "slug",
       options: {
-        source: "name",
+        source: "title",
         maxLength: 96,
       },
     },
