@@ -11,6 +11,7 @@ import provider from "./provider.js";
 import author from "./author.js";
 import blockContent from "./blockContent.js";
 import post from "./post.js";
+import youtube from "./youtube.js";
 
 import schemaTypes from "all:part:@sanity/base/schema-type";
 
@@ -27,5 +28,6 @@ export default createSchema({
     author,
     blockContent,
     post,
+    youtube,
   ]),
 });
