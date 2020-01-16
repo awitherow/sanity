@@ -9,6 +9,6 @@ export default [
     name: "description",
     title: "Description",
     description: "format this in a way that is SEO friendly and optimized.",
-    type: "string",
+    type: "text",
   },
 ];
