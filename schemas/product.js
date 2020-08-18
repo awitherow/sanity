@@ -7,6 +7,11 @@ export default {
   fields: [
     ...seo,
     {
+      name: "body",
+      title: "Body",
+      type: "blockContent",
+    },
+    {
       name: "slug",
       title: "Slug",
       type: "slug",
@@ -32,8 +37,7 @@ export default {
     },
     {
       title: "Tier",
-      description:
-        "Please select a number representing quality/price 1-3 only.",
+      description: "Please select a number representing quality/price 1-3 only.",
       name: "tier",
       type: "number",
     },
